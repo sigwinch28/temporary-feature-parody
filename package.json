@@ -1,0 +1,20 @@
+{
+  "name": "temporary-website",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production parcel build --public-url ./ src/index.html && gzip -9 --force --keep dist/index.html",
+    "serve": "parcel src/index.html"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.4",
+    "parcel": "^2.0.0-rc.0",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.15"
+  }
+}
